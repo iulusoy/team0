@@ -10,7 +10,9 @@ Welcome to Data analysis package's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   README
    modules
+
 
 Indices and tables
 ==================
