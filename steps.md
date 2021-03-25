@@ -6,6 +6,10 @@ make sure when adding comments to use the correct indent
 to run unittest: python -m unittest
 
 # Unit 3
+## pytest
+- create `__init__.py` in your package directory
+- create `conftest.py` in your package directory
+- create a `test` directory
 
 ## Documentation
 - Add into your `conf.py`:
