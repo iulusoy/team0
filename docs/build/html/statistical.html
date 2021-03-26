@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>statistical module &#8212; Data analysis package 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-statistical">
+<span id="statistical-module"></span><h1>statistical module<a class="headerlink" href="#module-statistical" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="statistical.check_significance">
+<code class="sig-prename descclassname"><span class="pre">statistical.</span></code><code class="sig-name descname"><span class="pre">check_significance</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshd</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#statistical.check_significance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks which columns are significant based on the set threshold
+for numpy arrays and pandas dataframes. Deletes insignificant
+columns.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>data (numpy array/pandas dataframe): The data object.
+threshd (float): The variance threshold below which data is considered as        constant and not included in the output.</p>
+</dd>
+<dt>Returns:</dt><dd><p>numpy array/pandas dataframe, integer list/string list:        The data object without insignificant        columns and the indices that correspond to the original columns that        remain, for plotting/labeling purposes.    purposes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="statistical.correlation_matrix">
+<code class="sig-prename descclassname"><span class="pre">statistical.</span></code><code class="sig-name descname"><span class="pre">correlation_matrix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#statistical.correlation_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the correlation matrix of a dataframe and orders by
+degree of correlation.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>data (pandas dataframe): The data object.</p>
+</dd>
+<dt>Returns:</dt><dd><p>pandas series: The correlation matrix sorted with highest        correlation on the top.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="statistical.euclidean_distance">
+<code class="sig-prename descclassname"><span class="pre">statistical.</span></code><code class="sig-name descname"><span class="pre">euclidean_distance</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_ref</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_comp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vectors</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#statistical.euclidean_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the Euclidean distance (L2 norm) between pairs of vectors.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>list_ref (integer list): A list with the indices of the reference vectors.
+list_comp (integer list): A list with the indices of the vectors to        compare to.
+data (numpy array): The data object.</p>
+</dd>
+<dt>Returns:</dt><dd><p>numpy array: The Euclidean distance (L2 norm) for comparison vs. reference        vectors.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Data analysis package</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Inga S. Ulusoy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/statistical.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
