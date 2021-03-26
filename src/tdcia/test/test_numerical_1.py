@@ -11,11 +11,11 @@ class build_wf:
 
     def init_array(self, dim1, dim2, myval):
         arr = np.ones((dim1, dim2), dtype=complex)
-        return arr*myval
+        return arr * myval
 
     def init_vector(self, dim1, myval):
         arr = np.ones((dim1), dtype=complex)
-        return arr*myval
+        return arr * myval
 
 
 # this fixture will only be run once in the beginning of this
