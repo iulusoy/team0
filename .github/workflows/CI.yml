@@ -37,5 +37,5 @@ jobs:
       run: flake8
     - name: Run pytest
       run: |
-        cd src
+        cd src/tdcia
         python -m pytest
