@@ -9,7 +9,7 @@ def test_area_circ():
     """Test the area values against a reference for r >= 0."""
     assert tf.area_circ(1) == np.pi, "should return pi"
     assert tf.area_circ(0) == 0
-    assert tf.area_circ(2.1) == np.pi*2.1**2
+    assert tf.area_circ(2.1) == np.pi * 2.1**2
 
 
 @pytest.mark.circles

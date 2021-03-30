@@ -4,3 +4,4 @@ seaborn
 pytest
 sphinx
 recommonmark
+flake8
