@@ -5,11 +5,11 @@ import transform as tf
 
 @pytest.mark.circles
 @pytest.mark.parametrize('myinput, myref',
-                        [(1, np.pi),
-                        (0, 0),
-                        (2.1, np.pi*2.1**2),
-                        # (-5, pytest.raises(ValueError)),
-                        ])
+                         [(1, np.pi),
+                          (0, 0),
+                          (2.1, np.pi * 2.1**2),
+                          # (-5, pytest.raises(ValueError)),
+                          ])
 def test_area_circ(myinput, myref):
     """Test the area values against a reference for r >= 0."""
     print(myinput)
