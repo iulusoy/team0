@@ -33,7 +33,7 @@ release = '0.1'
 extensions = ['sphinx.ext.autodoc',
               'recommonmark',
               'sphinx.ext.napoleon'
-]
+              ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
