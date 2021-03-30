@@ -39,3 +39,7 @@ jobs:
       run: |
         cd src/tdcia
         python -m pytest
+    - name: build doc
+      run: |
+        cd docs
+        make html
